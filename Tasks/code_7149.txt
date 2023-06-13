@@ -1,5 +1,0 @@
-{'actions': {'task 1': {'do': 'open microsoft word, open a new document and write a poem about Mike Robert and his company trying to hire Marvin if he writes an intelligent agent',
-                        'key': 'desktop_control',
-                        'library': 'pyautogui WITH NO IMAGES',
-                        'completed': '',
-                        'page_images': None}}}
