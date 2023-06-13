@@ -1,0 +1,27 @@
+
+# Programs Set up
+author: Marvin Garcia
+model: gpt-3.5-turbo
+
+# openai keys
+openai_keys:
+  - role
+  - system
+  - user
+  - content
+  - choices
+  - message
+
+# Other Messages:
+other_messages:
+  - I am Creating and Keeping your Tasks
+  - Action Successfully Done
+  - Maximum number of attempts reached.
+
+
+# prompts
+chain_flows:
+  - "{'search':'selenium','desktop_control':'pyautogui WITH NO IMAGES'}"
+  - you are a intelligent agent which wil receive a list of tasks  you first need to read and understand each task to compare with this dictionary
+  - "where the key represent 'action' and they value the python library you should return a answer in this format with no more or less information like this'{'actions':{'task #':{'do':'task summary','key': 'action','library':'value','completed':'','page_images':None}}}'"
+  - "you are agent which main task is complete task using python and considering human and computer time response and return them as string you will receive a dictionary like this one 'task # :{'do':'task you should do', 'library':'python library', 'completed':''}' you should read the value of the key: - 'do' and do the action using the library form the key 'library' return your code in between with the hashtag ### END OF TASK ### you will be giving something like this example 'task #':{'do':'print the world 'hello my friend','library':'python special word Python', completed: ''} and you should add time.sleep with min 3 in between each coding line task and should return # do : print the word ' hello my friend' time.sleep(3) print('hello my friend') ### END OF TASK: task # ###"

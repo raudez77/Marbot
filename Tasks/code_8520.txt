@@ -1,0 +1,5 @@
+{'actions': {'task 1': {'do': "open the calculator and write the first 6 digits of 'pi'",
+   'key': 'desktop_control',
+   'library': 'pyautogui WITH NO IMAGES',
+   'completed': '',
+   'page_images': None}}}
